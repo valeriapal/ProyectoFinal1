@@ -17,9 +17,10 @@ namespace ProyectoFinal1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //BOTON PARA LLAMAR AL FORMULARIO 2 (MODULO 1 MENOR DE DOS NUMEROS)
         {
-
+            Form formulario2 = new Form2();
+            formulario2.Show();
         }
     }
 }
