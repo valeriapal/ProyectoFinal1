@@ -67,7 +67,8 @@ namespace ProyectoFinal1
 
         private void InvertirPalabra()
         {
-            throw new NotImplementedException();
+            formInvertirPalabras formInvertir = new formInvertirPalabras();
+            formInvertir.Show();
         }
 
         /// <summary>

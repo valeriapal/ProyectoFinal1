@@ -36,23 +36,23 @@ namespace ProyectoFinal1
             // cbbopciones
             // 
             this.cbbopciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbopciones.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.cbbopciones.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.cbbopciones.FormattingEnabled = true;
-            this.cbbopciones.Location = new System.Drawing.Point(92, 45);
+            this.cbbopciones.Location = new System.Drawing.Point(41, 56);
             this.cbbopciones.Name = "cbbopciones";
-            this.cbbopciones.Size = new System.Drawing.Size(206, 23);
+            this.cbbopciones.Size = new System.Drawing.Size(376, 38);
             this.cbbopciones.TabIndex = 0;
             this.cbbopciones.SelectedIndexChanged += new System.EventHandler(this.cbbopciones_SelectedIndexChanged);
             // 
             // lblopciones
             // 
             this.lblopciones.AutoSize = true;
-            this.lblopciones.Location = new System.Drawing.Point(92, 27);
+            this.lblopciones.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblopciones.Location = new System.Drawing.Point(55, 28);
             this.lblopciones.Name = "lblopciones";
-            this.lblopciones.Size = new System.Drawing.Size(89, 15);
+            this.lblopciones.Size = new System.Drawing.Size(144, 25);
             this.lblopciones.TabIndex = 1;
             this.lblopciones.Text = "Elegir Opciones";
-            this.lblopciones.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
