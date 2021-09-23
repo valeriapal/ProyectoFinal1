@@ -28,10 +28,7 @@ namespace ProyectoFinal1
             cbbopciones.Items.Add("Ahorcado");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void cbbopciones_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -78,7 +75,10 @@ namespace ProyectoFinal1
         /// </summary>
         private void areaTriangulo()
         {
-            
+            formAreaTriangulo formArea = new formAreaTriangulo();
+            formArea.Show();
         }
+
+        
     }
 }
