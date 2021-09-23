@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="InvertirPalabras.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formAreaTriangulo.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="formAreaTriangulo - Copia.resx">
+      <DependentUpon>formAreaTriangulo.resx</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
