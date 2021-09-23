@@ -53,6 +53,7 @@ namespace ProyectoFinal1
             this.lblopciones.Size = new System.Drawing.Size(144, 25);
             this.lblopciones.TabIndex = 1;
             this.lblopciones.Text = "Elegir Opciones";
+        
             // 
             // Form1
             // 
