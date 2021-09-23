@@ -59,11 +59,18 @@ namespace ProyectoFinal1
                 }
             }
         }
+        /// <summary>
+        /// funcion que se encarga del juego ahorcado
+        /// </summary>
 
         private void ahorcado()
         {
-            throw new NotImplementedException();
+            formAhorcado formAhorca = new formAhorcado();
+            formAhorca.Show();
         }
+        /// <summary>
+        /// funcion que se encarga de invertir las palabras
+        /// </summary>
 
         private void InvertirPalabra()
         {
@@ -81,7 +88,9 @@ namespace ProyectoFinal1
         }
 
         
-
+        /// <summary>
+        /// funcion que evalua el numero menor entre dos numeros
+        /// </summary>
         private void NumeroMenor()
         {
             Form formulario2 = new Form2();
