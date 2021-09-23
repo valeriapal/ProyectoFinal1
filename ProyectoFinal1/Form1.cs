@@ -39,19 +39,19 @@ namespace ProyectoFinal1
                 switch (indice)
                 {
                     case "Menor de 2 números":
-                        //crear funcion
+                        NumeroMenor();
                         break;
                     case "Calcula el Area de un Triángulo":
                         areaTriangulo();
                         break;
                     case "Cuenta letras":
-                        //crear funcion
+                        //CuentaLetras();
                         break;
                     case "Invertir palabra":
                         InvertirPalabra();
                         break;
                     case "Panagramas":
-                        //crear funcion
+                       // Panagramas();
                         break;
                     case "Ahorcado":
                         ahorcado();
@@ -80,5 +80,12 @@ namespace ProyectoFinal1
         }
 
         
+
+        private void NumeroMenor()
+        {
+            Form formulario2 = new Form2();
+            formulario2.Show();
+        }
+
     }
 }
