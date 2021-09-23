@@ -33,6 +33,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbLista = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtResultado2 = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.rbMenor = new System.Windows.Forms.RadioButton();
             this.rbMayor = new System.Windows.Forms.RadioButton();
-            this.txtResultado2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +99,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Número Menor y Mayor";
             // 
+            // txtResultado2
+            // 
+            this.txtResultado2.Location = new System.Drawing.Point(33, 243);
+            this.txtResultado2.Name = "txtResultado2";
+            this.txtResultado2.Size = new System.Drawing.Size(193, 27);
+            this.txtResultado2.TabIndex = 2;
+            // 
             // txtResultado
             // 
             this.txtResultado.Location = new System.Drawing.Point(33, 117);
@@ -134,7 +141,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 9);
+            this.label1.Location = new System.Drawing.Point(281, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 20);
             this.label1.TabIndex = 6;
@@ -180,13 +187,6 @@
             this.rbMayor.TabStop = true;
             this.rbMayor.Text = "Mayor";
             this.rbMayor.UseVisualStyleBackColor = true;
-            // 
-            // txtResultado2
-            // 
-            this.txtResultado2.Location = new System.Drawing.Point(33, 243);
-            this.txtResultado2.Name = "txtResultado2";
-            this.txtResultado2.Size = new System.Drawing.Size(193, 27);
-            this.txtResultado2.TabIndex = 2;
             // 
             // Form2
             // 

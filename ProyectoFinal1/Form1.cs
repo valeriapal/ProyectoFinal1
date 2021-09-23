@@ -45,7 +45,7 @@ namespace ProyectoFinal1
                         areaTriangulo();
                         break;
                     case "Cuenta letras":
-                        //CuentaLetras();
+                        CuentaLetras();
                         break;
                     case "Invertir palabra":
                         InvertirPalabra();
@@ -85,6 +85,12 @@ namespace ProyectoFinal1
         {
             Form formulario2 = new Form2();
             formulario2.Show();
+        }
+
+        private void CuentaLetras()
+        {
+            Form formulario3 = new CuentaLetras();
+            formulario3.Show();
         }
 
     }
