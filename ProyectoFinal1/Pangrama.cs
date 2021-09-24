@@ -17,16 +17,16 @@ namespace ProyectoFinal1
 
         private string Letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
         private string SignosPuntuacion = " ¨.,-:;!?'\"()[]{}/ ";
-        private StringBuilder pangrama = new StringBuilder();
+        private StringBuilder pangrama = new StringBuilder(); //permite muchas modificaciones a una cadena
 
         private void txtIngresar_TextChanged(object sender, EventArgs e)
         {
-            StringBuilder sbMissing = new StringBuilder();
-            pangrama = new StringBuilder(txtIngresar.Text.ToUpper());
+            StringBuilder sbFaltar = new StringBuilder();
+            pangrama = new StringBuilder(txtIngresar.Text.ToUpper()); //toma un carácter y devuelve su versión en mayúscula
 
             foreach (char sp in SignosPuntuacion)
 
-                pangrama.Replace(sp.ToString(), "".ToString());
+                pangrama.Replace(sp.ToString(), "".ToString()); //La función Replace de las cadenas remplaza una cadena o subcadena por otra y devuelve una cadena nueva en donde ya se ha realizado el remplazo
             lblLetrasTotal.Text = "" +
                pangrama.Length.ToString();
 
@@ -34,13 +34,14 @@ namespace ProyectoFinal1
             {
                 if (!pangrama.ToString().Contains(ch))
                 {
-                    sbMissing.Append(ch);
-                    sbMissing.Append(" ");
+                    sbFaltar.Append(ch);
+                   // Anexa una copia de la cadena especificada seguida del terminador de línea predeterminado al final del objeto StringBuilder actual
+                    sbFaltar.Append(" ");
                     
                 }
             }
 
-            txtFaltar.Text = sbMissing.ToString();
+            txtFaltar.Text = sbFaltar.ToString();
             
         }
     }

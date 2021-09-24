@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal1
 {
-    public partial class Form2 : Form
+    public partial class NumeroMenor : Form
     {
-        public Form2()
+        public NumeroMenor()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace ProyectoFinal1
         {
             try
             {
-                if(txtIngresar.Text.Trim() != "")
+                if(txtIngresar.Text.Trim() != "") //No permite espacios vacios ni caracteres
                 {
                     lbLista.Items.Add(float.Parse(txtIngresar.Text));
                     txtIngresar.Text = "";
@@ -40,6 +40,7 @@ namespace ProyectoFinal1
                 txtIngresar.Focus();
             }
         }
+
 
         private double Minimo()
         {

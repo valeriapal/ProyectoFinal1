@@ -41,7 +41,7 @@ namespace ProyectoFinal1
                         }
                     }
 
-                    lbLista.Items.Add(caracter + ":" + veces + " veces");
+                    lbLista.Items.Add(caracter + " : " + veces);
                     veces = 0;
 
                     contar += linea[i].ToString(); // Almacena la letra contada

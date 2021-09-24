@@ -93,10 +93,12 @@ namespace ProyectoFinal1
         /// </summary>
         private void NumeroMenor()
         {
-            Form formulario2 = new Form2();
+            Form formulario2 = new NumeroMenor();
             formulario2.Show();
         }
 
+
+       
         private void CuentaLetras()
         {
             Form formulario3 = new CuentaLetras();
