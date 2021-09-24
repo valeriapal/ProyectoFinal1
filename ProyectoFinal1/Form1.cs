@@ -50,8 +50,8 @@ namespace ProyectoFinal1
                     case "Invertir palabra":
                         InvertirPalabra();
                         break;
-                    case "Pangramas":
-                        Pangrama();
+                    case "Panagramas":
+                        Panagrama();
                         break;
                     case "Ahorcado":
                         ahorcado();
@@ -105,7 +105,7 @@ namespace ProyectoFinal1
             formulario3.Show();
         }
 
-        private void Pangrama()
+        private void Panagrama()
         {
             Form formulario4 = new Pangrama();
             formulario4.Show();
