@@ -50,7 +50,7 @@ namespace ProyectoFinal1
                     case "Invertir palabra":
                         InvertirPalabra();
                         break;
-                    case "Panagramas":
+                    case "Pangramas":
                         Pangrama();
                         break;
                     case "Ahorcado":

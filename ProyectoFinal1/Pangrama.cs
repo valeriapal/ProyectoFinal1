@@ -15,14 +15,36 @@ namespace ProyectoFinal1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private string Letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        private string SignosPuntuacion = " ¨.,-:;!?'\"()[]{}/ ";
+        private StringBuilder pangrama = new StringBuilder();
+
+        private void txtIngresar_TextChanged(object sender, EventArgs e)
         {
+            StringBuilder sbMissing = new StringBuilder();
+            pangrama = new StringBuilder(txtIngresar.Text.ToUpper());
 
-        }
+            foreach (char sp in SignosPuntuacion)
 
-        private void btnPregunta_Click(object sender, EventArgs e)
-        {
+                pangrama.Replace(sp.ToString(), "".ToString());
+            lblLetrasTotal.Text = "" +
+               pangrama.Length.ToString();
 
+            foreach (char ch in Letras.ToCharArray())
+            {
+                if (!pangrama.ToString().Contains(ch))
+                {
+                    sbMissing.Append(ch);
+                    sbMissing.Append(" ");
+                    
+                }
+            }
+
+            txtFaltar.Text = sbMissing.ToString();
+            
         }
     }
-}
+    }
+
+
+
