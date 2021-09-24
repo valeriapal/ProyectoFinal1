@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="InvertirPalabras.cs" />
-    <Compile Update="formAreaTriangulo.cs" />
+    <Compile Update="FormAhorcado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formInvertirPalabras - Copia.Designer.cs">
+      <DependentUpon>formInvertirPalabras.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="formInvertirPalabras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formAreaTriangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -19,6 +29,9 @@
   <ItemGroup>
     <EmbeddedResource Update="formAreaTriangulo - Copia.resx">
       <DependentUpon>formAreaTriangulo.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="formInvertirPalabras - Copia.resx">
+      <DependentUpon>formInvertirPalabras.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
