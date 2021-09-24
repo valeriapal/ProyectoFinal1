@@ -86,10 +86,10 @@
             // txtPalabra
             // 
             this.txtPalabra.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.txtPalabra.Location = new System.Drawing.Point(32, 120);
+            this.txtPalabra.Location = new System.Drawing.Point(32, 111);
             this.txtPalabra.Name = "txtPalabra";
             this.txtPalabra.ReadOnly = true;
-            this.txtPalabra.Size = new System.Drawing.Size(216, 34);
+            this.txtPalabra.Size = new System.Drawing.Size(286, 34);
             this.txtPalabra.TabIndex = 4;
             // 
             // pictureBox1

@@ -38,17 +38,17 @@ namespace ProyectoFinal1
             Random random = new Random();
             int indicePalabraSeleccionada = random.Next(0, palabras1.Length);
             palabraSeleccionada = palabras1[indicePalabraSeleccionada].ToUpper().ToString();
+            txtPalabra.Text = "";
 
         }
 
-        
+
         private void validadorAhorcado(char letra)
         {
-
+            string textoActual = txtPalabra.Text;
             if (palabraSeleccionada.Contains(letra))
             {
                 string palabra_mostrar = string.Empty;
-                string textoActual = txtPalabra.Text;
                 foreach (var l in palabraSeleccionada)
                 {
                     if (letra == l)
@@ -57,14 +57,31 @@ namespace ProyectoFinal1
                     }
                     else
                     {
-                        palabra_mostrar += " _ ";
+                        if (textoActual.Contains(l))
+                        {
+                            palabra_mostrar += $"{l}";
+                        }
+                        else
+                        {
+                            palabra_mostrar += " _ ";
+                        }
                     }
                 }
                 txtPalabra.Text = palabra_mostrar;
+
+                if (palabra_mostrar == palabraSeleccionada)
+                {
+                    MessageBox.Show("¡Ganaste!");
+                }
+                
             }
             else
             {
                 errores++;
+                if (errores>=intentos)
+                {
+                    MessageBox.Show("¡Perdiste!\n la palabra era: " +palabraSeleccionada);
+                }
                 pintarImagen(errores);
             }
 
@@ -120,6 +137,8 @@ namespace ProyectoFinal1
             btnX.Enabled = true;
             btnY.Enabled = true;
             btnZ.Enabled = true;
+
+            
         }
 
         private void btnA_Click(object sender, EventArgs e)
